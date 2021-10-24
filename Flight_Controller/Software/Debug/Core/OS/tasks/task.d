@@ -37,7 +37,13 @@ Core/OS/tasks/task.o: ../Core/OS/tasks/task.c ../Core/OS/tasks/task.h \
  ../Core/OS/tasks/../events/../macro_types.h \
  ../Core/OS/tasks/../events/flags.h \
  ../Core/OS/tasks/../events/../system_d.h ../Core/Inc/../OS/time.h \
- ../Core/OS/tasks/../../config.h
+ ../Core/OS/tasks/../../config.h \
+ ../Core/OS/tasks/../../Peripherals/Uart.h \
+ ../Core/OS/tasks/../../Peripherals/../Inc/usart.h \
+ ../Core/OS/tasks/../../Peripherals/../Inc/main.h \
+ ../Core/OS/tasks/../../Peripherals/../OS/macro_types.h \
+ ../Core/OS/tasks/../../Data_Logger/Data_logger.h \
+ ../Core/OS/tasks/../../Data_Logger/../OS/system_d.h
 
 ../Core/OS/tasks/task.h:
 
@@ -122,3 +128,15 @@ Core/OS/tasks/task.o: ../Core/OS/tasks/task.c ../Core/OS/tasks/task.h \
 ../Core/Inc/../OS/time.h:
 
 ../Core/OS/tasks/../../config.h:
+
+../Core/OS/tasks/../../Peripherals/Uart.h:
+
+../Core/OS/tasks/../../Peripherals/../Inc/usart.h:
+
+../Core/OS/tasks/../../Peripherals/../Inc/main.h:
+
+../Core/OS/tasks/../../Peripherals/../OS/macro_types.h:
+
+../Core/OS/tasks/../../Data_Logger/Data_logger.h:
+
+../Core/OS/tasks/../../Data_Logger/../OS/system_d.h:
