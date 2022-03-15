@@ -11,7 +11,7 @@ iInv = inv(I);
 % Coef force de frottement quand le drone tourne en kg*m*s^-2 / s * rad
 f = 0.8;
 % Conversion signal moteur =>force en Newton(kg*m*s^-2)
-k = 1;
+k = 0.01;
 % Constance de couple en yaw
 C = 0.01;
 % Position du centre de gravité du drone en m
@@ -43,8 +43,8 @@ dis_sts = c2d(sys, 0.001)
 %% open loop simulation to step impulse
 t = dt:dt:20;
 u = [0*t.' 0*t.' 0*t.' 0*t.'];
-u(100:1000,1) = 0.1;
-u(100:1000,2) = 0.1;
+u(100:1000,3) = 50;
+u(100:1000,2) = 50;
 [x, t] = lsim(sys, u, t);
 
 hold on
