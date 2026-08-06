@@ -31,11 +31,15 @@ void IDLE_Main(high_level_t * high_level)
 		{
 			if(high_level->radio[5] < 1300)
 			{
-				high_level->state = high_level_eSIMU_OPEN_LOOP;
+				high_level->state = high_level_eANGLE;
 			}
 			else if(high_level->radio[5] < 1600)
 			{
 				high_level->state = high_level_eACCRO;
+			}
+			else if(high_level->radio[5] <= 2050)
+			{
+				high_level->state = high_level_eREMOTE_TELEMETRY;
 			}
 		}
 		else if(high_level->radio[7] > 1500)
@@ -44,7 +48,11 @@ void IDLE_Main(high_level_t * high_level)
 		}
 		else if(high_level->radio[6] > 1300)
 		{
-			high_level->state = high_level_eESC_CALIBRATION;
+			//high_level->state = high_level_eESC_CALIBRATION;
+		}
+		else if(high_level->radio[9] > 1500)
+		{
+			high_level->state = high_level_eGYRO_CALIBRATION;
 		}
 	}
 
