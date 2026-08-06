@@ -1,4 +1,22 @@
-Sensors/Board/Project Logs for Sensors
-Sensors/Board/History
-Flight_Controller/Software/Debug
-MatLab/main.asv
+# === Altium Designer ===
+# Local auto-backups and generated files — never commit these
+History/
+__Previews/
+Project Logs*/
+*.PrjPcbStructure
+*.SchDocPreview
+*.PcbDocPreview
+*.$$$
+*.~*
+DXP.RCS
+Previews.Ini
+Status Report.Txt
+
+# === STM32CubeIDE / Eclipse ===
+Flight_Controller/Software/Debug/
+Flight_Controller/Software/Release/
+
+# === MatLab / Simulink ===
+MatLab/slprj/
+*.slxc
+*.asv
